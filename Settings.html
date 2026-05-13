@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | FindYourPath</title>
+    <!-- Tailwind for layout, FontAwesome for icons -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-slate-800">
+
+    <!-- Header -->
+    <header class="bg-white border-b px-8 py-3 flex items-center justify-between sticky top-0 z-50">
+        <div class="flex items-center space-x-2">
+            <div class="logo-box bg-[#1a2e44] p-1 rounded text-white text-xs font-bold">FYP</div>
+            <span class="text-xl font-bold text-[#1a2e44]">FindYourPath</span>
+        </div>
+        
+        <nav class="hidden md:flex items-center space-x-8 font-semibold">
+            <a href="#" class="bg-[#1a2e44] text-white px-6 py-2 rounded-md">Home</a>
+            <a href="#" class="hover:text-blue-700">Find Mentor</a>
+            <a href="#" class="hover:text-blue-700">Community</a>
+            <a href="#" class="hover:text-blue-700">Resources</a>
+        </nav>
+
+        <div class="flex items-center space-x-6">
+            <input type="text" placeholder="Search...." class="border rounded-md px-4 py-1.5 text-sm bg-gray-50 w-64 focus:outline-none">
+            <div class="flex items-center space-x-4 text-gray-500">
+                <div class="relative"><i class="fa-regular fa-bell text-xl"></i><span class="noti-dot">3</span></div>
+                <i class="fa-regular fa-comment text-xl"></i>
+                <div class="flex items-center space-x-2 border-l pl-4">
+                    <img src="https://i.pravatar.cc/150?u=angle" class="rounded-full w-8 h-8 object-cover border" alt="User">
+                    <div class="text-[10px] leading-tight">
+                        <p class="font-bold text-slate-900">Angle M.</p>
+                        <p class="text-gray-400">ROLE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex p-6 gap-6 min-h-screen">
+        
+        <!-- Left Sidebar Navigation -->
+        <aside class="w-64 bg-white rounded-2xl shadow-sm border p-6 flex flex-col justify-between">
+            <div class="space-y-6">
+                <nav class="space-y-5">
+                    <a href="#" class="nav-link"><i class="fa-solid fa-bars w-5"></i> <span>Dashboard</span></a>
+                    <a href="#" class="nav-link"><i class="fa-regular fa-message w-5"></i> <span>Messages</span></a>
+                    <a href="#" class="nav-link"><i class="fa-regular fa-calendar w-5"></i> <span>Booking</span></a>
+                    <a href="#" class="nav-link"><i class="fa-solid fa-user-group w-5"></i> <span>Mentors</span></a>
+                    <a href="#" class="nav-link"><i class="fa-solid fa-users w-5"></i> <span>Community</span></a>
+                    <a href="#" class="nav-link border-b pb-5"><i class="fa-solid fa-book-open w-5"></i> <span>Resources</span></a>
+                </nav>
+
+                <nav class="space-y-5 pt-2">
+                    <a href="#" class="nav-link active-nav"><i class="fa-solid fa-gear w-5"></i> <span>Settings</span></a>
+                    <a href="#" class="nav-link"><i class="fa-regular fa-circle-question w-5"></i> <span>Help & Support</span></a>
+                    <a href="#" class="nav-link"><i class="fa-solid fa-arrow-right-from-bracket w-5"></i> <span>Log out</span></a>
+                </nav>
+            </div>
+
+            <!-- Brand Card -->
+            <div class="mt-10 brand-card rounded-2xl p-6 text-center border">
+                <div class="mb-4 flex justify-center">
+                   <img src="PRT logo.png" class="w-16 h-16 opacity-80" alt="icon">
+                </div>
+                <p class="text-[#1a2e44] font-black text-sm leading-snug">
+                    Real guidance.<br>Local mentors.<br>Brighter futures.
+                </p>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="flex-1">
+            <h1 class="text-2xl font-black text-[#1a2e44] mb-6">Settings</h1>
+            
+            <div class="flex gap-6">
+                <!-- Settings Internal Navigation -->
+                <div class="w-64 bg-white rounded-2xl shadow-sm border p-8 space-y-10 font-bold text-slate-600">
+                    <div class="bg-gray-100 -mx-4 px-4 py-2 rounded-lg text-green-600">Profile</div>
+                    <div class="hover:text-green-600 cursor-pointer">Account</div>
+                    <div class="hover:text-green-600 cursor-pointer">Notifications</div>
+                    <div class="hover:text-green-600 cursor-pointer">Appearance</div>
+                    <div class="hover:text-green-600 cursor-pointer">Password</div>
+                    <div class="hover:text-green-600 cursor-pointer">Help & Support</div>
+                </div>
+
+                <!-- Profile Information Card -->
+                <div class="flex-1 bg-white rounded-2xl shadow-sm border p-10">
+                    <h2 class="text-xl font-bold text-[#1a2e44] mb-8">Profile Information</h2>
+                    
+                    <div class="flex flex-col xl:flex-row gap-12">
+                        <!-- Profile Image with Hexagon Mask -->
+                        <div class="flex flex-col items-center">
+                            <div class="hexagon-wrap bg-orange-400">
+                                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=600" alt="Profile">
+                            </div>
+                        </div>
+
+                        <!-- Form -->
+                        <div class="flex-1 space-y-5">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" value="Angle Mokoena" id="fullName">
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" value="Anglemokoena@23gmail.com" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="text" value="0642046907" id="phone">
+                            </div>
+                            <div class="form-group">
+                                <label>Location</label>
+                                <input type="text" value="Durban, KwaZulu Natal" id="location">
+                            </div>
+                            <div class="form-group">
+                                <label>Bio</label>
+                                <textarea id="bio">Focused on growth, learning, and becoming the best version of myself.</textarea>
+                            </div>
+                            <button id="saveBtn" class="bg-green-600 text-white px-8 py-2.5 rounded-lg font-bold shadow-md hover:bg-green-700 transition-colors">
+                                Save Changes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="w-72 bg-white rounded-2xl shadow-sm border p-6 h-fit">
+                    <h3 class="font-bold text-slate-800 mb-5">Quick Links</h3>
+                    <ul class="space-y-4 text-xs font-bold text-slate-500">
+                        <li class="flex justify-between items-center cursor-pointer hover:text-green-600">
+                            Edit Profile
+                        </li>
+                        <li class="flex justify-between items-center cursor-pointer hover:text-green-600">
+                            Change Password <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </li>
+                        <li class="flex justify-between items-center cursor-pointer hover:text-green-600">
+                            Notification Settings <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </li>
+                        <li class="flex justify-between items-center cursor-pointer hover:text-green-600">
+                            Privacy Settings <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
