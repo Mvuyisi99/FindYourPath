@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindYourPath Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <!-- Font Awesome for UI icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="logo-area">
+            <img src="PROJECT.png" alt="Logo" class="main-logo">
+            <span class="brand-name">Find<span class="green-text">Your</span>Path</span>
+        </div>
+        <nav class="top-nav">
+            <a href="#" class="nav-btn active">Home</a>
+            <a href="#">Find Mentor</a>
+            <a href="#">Community</a>
+            <a href="#">Resources</a>
+        </nav>
+        <div class="header-right">
+            <div class="top-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="notif-icons">
+                <i class="far fa-bell"></i>
+                <span class="badge">2</span>
+                <i class="far fa-comment-alt"></i>
+            </div>
+            <div class="user-profile">
+                <img src="https://i.pravatar.cc/150?u=a042581f4e29026704d" alt="User" class="avatar">
+            </div>
+        </div>
+    </header>
+
+    <div class="layout-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="side-menu">
+                <li><i class="fas fa-th-large"></i> Dashboard</li>
+                <li><i class="far fa-envelope"></i> Messages</li>
+                <li><i class="far fa-calendar-alt"></i> Booking</li>
+                <li class="active"><i class="fas fa-user-friends"></i> Mentors</li>
+                <li><i class="fas fa-users"></i> Community</li>
+                <li><i class="fas fa-book"></i> Resources</li>
+            </ul>
+            <div class="menu-divider"></div>
+            <ul class="side-menu">
+                <li><i class="fas fa-cog"></i> Settings</li>
+                <li><i class="far fa-question-circle"></i> Help & Support</li>
+                <li><i class="fas fa-sign-out-alt"></i> Log out</li>
+            </ul>
+            
+            <!-- Bottom Promotion Image Section -->
+            <div class="promo-box">
+                <img src="PROJECT.png" alt="Mentorship Guidance" class="promo-img">
+                <h3>Real guidance. <br>Local mentors. <br>Brighter futures.</h3>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content-body">
+            <div class="content-header">
+                <div class="title-text">
+                    <h1>Career Explorer</h1>
+                    <p>Explore different career paths and plan your future.</p>
+                </div>
+                <div class="header-tools">
+                    <div class="main-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="careerFilter" placeholder="Search for a career...">
+                    </div>
+                    <button class="btn-industry">Explore Industries</button>
+                </div>
+            </div>
+
+            <div class="explorer-grid">
+                <!-- Career Categories List -->
+                <div class="career-nav">
+                    <h2>Top Career Paths</h2>
+                    <ul id="careerList">
+                        <li class="active">Information Technology</li>
+                        <li>Business & Finance</li>
+                        <li>Healthcare</li>
+                        <li>Education</li>
+                        <li>Engineering</li>
+                        <li>Marketing</li>
+                        <li>Law</li>
+                        <li>Creative Arts</li>
+                    </ul>
+                </div>
+
+                <!-- Career Detailed Card -->
+                <div class="details-panel">
+                    <div class="hero-banner">
+                        <div class="banner-overlay">
+                            <h2 id="dynamicTitle">INFORMATION TECHNOLOGY</h2>
+                            <p>Information Technology (IT) refers to the use of computers, software, networks, and other technologies to store, process, transmit, and retrieve information. It involves the management and utilization of technology to support various tasks and improve efficiency in handling data and communication.</p>
+                        </div>
+                    </div>
+
+                    <div class="career-stats">
+                        <div class="stat">
+                            <i class="fas fa-hand-holding-usd"></i>
+                            <div>
+                                <span>Average Salary</span>
+                                <strong><span class="green-text">R955,000</span> year</strong>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <span>Job Growth</span>
+                                <strong class="green-text">High</strong>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-plus-circle"></i>
+                            <div>
+                                <span>Education Level</span>
+                                <strong class="green-text">Diploma/Degree</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-block">
+                        <h3>Skills You Need</h3>
+                        <div class="tag-cloud">
+                            <span class="skill-tag">Problem Solving</span>
+                            <span class="skill-tag">Programming</span>
+                            <span class="skill-tag">Communication</span>
+                            <span class="skill-tag">Analytical Thinking</span>
+                            <span class="skill-tag">Time Management</span>
+                        </div>
+                    </div>
+
+                    <div class="steps-block">
+                        <h3>Steps to Get Started</h3>
+                        <ol>
+                            <li>Learn programming (Python, Java, etc.)</li>
+                            <li>Build real-world projects</li>
+                            <li>Study IT / Computer Science</li>
+                            <li>Apply for internships and junior roles</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const listItems = document.querySelectorAll('#careerList li');
+            const mainTitle = document.getElementById('dynamicTitle');
+            const searchBar = document.getElementById('careerFilter');
+
+            // Switch Career Paths
+            listItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    listItems.forEach(i => i.classList.remove('active'));
+                    item.classList.add('active');
+                    mainTitle.innerText = item.innerText.toUpperCase();
+                });
+            });
+
+            // Search filtering
+            searchBar.addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase();
+                listItems.forEach(item => {
+                    const text = item.innerText.toLowerCase();
+                    item.style.display = text.includes(query) ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
