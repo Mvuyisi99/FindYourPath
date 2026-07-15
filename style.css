@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f0f4f8;
+  color: #1a2e44;
+}
+
+/* TOP NAV */
+.topnav {
+  display: flex;
+  align-items: center;
+  height: 52px;
+  background: #fff;
+  padding: 0 20px;
+  border-bottom: 1px solid #e2e8f0;
+  gap: 20px;
+}
+
+.logo-icon img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+nav a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: #4a5568;
+}
+
+nav a.active {
+  background: #1a2e44;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.nav-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* LAYOUT */
+.layout {
+  display: flex;
+  height: calc(100vh - 52px);
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 180px;
+  background: white;
+  padding: 10px;
+  border-right: 1px solid #e2e8f0;
+}
+
+.sidebar-item {
+  display: block;
+  padding: 10px;
+  color: #4a5568;
+  text-decoration: none;
+}
+
+.sidebar-item.active {
+  font-weight: bold;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 22px;
+}
+
+/* FAQ */
+.faq-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.faq-answer {
+  display: none;
+  padding-top: 8px;
+  color: #718096;
+}
+
+.faq-answer.open {
+  display: block;
+}
+
+/* RIGHT COLUMN */
+.right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.help-card,
+.report-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* BUTTONS */
+.btn-green {
+  background: #2d7a4f;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+}
+
+.btn-green-sm {
+  background: #2d7a4f;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+/* FLOAT BUTTON */
+.round-badge {
+  width: 50px;
+  height: 50px;
+  background: black;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
