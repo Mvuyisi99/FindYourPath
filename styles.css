@@ -21,6 +21,25 @@
     color: #64748b;
     transition: all 0.2s;
 }
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.text-green {
+    color: #5FA43A;
+}
+.header-logo-image {
+    width: 28px;   /* Match the height and width of the original SVG */
+    height: 28px;
+    object-fit: contain; /* Ensures the logo image isn't stretched */
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
 .active-nav {
     color: #16a34a;
