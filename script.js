@@ -169,3 +169,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+// Simple functional interaction scripting for Visual Studio Code standard builds
+
+document.addEventListener('DOMContentLoaded', () => {
+    const requestButton = document.getElementById('requestBtn');
+
+    // Simple interaction to test everything works dynamically
+    if (requestButton) {
+        requestButton.addEventListener('click', () => {
+            // Toggles state dynamically upon user clicking
+            if (requestButton.innerText === "Request mentor") {
+                requestButton.innerText = "Requested ✔";
+                requestButton.style.backgroundColor = "#2b6cb0"; // Changes to cool blue state
+            } else {
+                requestButton.innerText = "Request mentor";
+                requestButton.style.backgroundColor = "#55a630"; // Reverts to primary component green
+            }
+        });
+    }
+});

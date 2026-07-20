@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Profile View - Find Your Path</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="Mentor Profile View.css">
+    <!-- FontAwesome for the UI icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Outer Page Wrap mimicking the screenshot frame -->
+    <div class="page-wrapper">
+        
+        <!-- Header / Navigation Bar -->
+        <header>
+            <div class="header-left">
+                <div class="logo-area">
+                    <img src="https://via.placeholde.com/30" alt="Logo" class="logo-icon">
+                    <span class="logo-text">Find<span class="logo-green">Your</span>Path</span>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <a href="#" class="nav-item active">Home</a>
+                <a href="#" class="nav-item">Find Mentor</a>
+                <a href="#" class="nav-item">Encouragement</a>
+                <a href="#" class="nav-item">Resources</a>
+            </nav>
+            
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="header-icons">
+                    <i class="fa-regular fa-bell icon-btn"><span class="badge">0</span></i>
+                    <i class="fa-regular fa-comment icon-btn"></i>
+                    <img src="https://via.placeholder.com/35" alt="User Profile" class="user-avatar">
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Dashboard Layout -->
+        <div class="dashboard-layout">
+            
+            <!-- Left Sidebar: More Mentors -->
+            <aside class="sidebar-card">
+                <h2 class="sidebar-title">More Mentors for you</h2>
+                <div class="mentor-list">
+                    
+                    <div class="mentor-item">
+                        <img src="jessica.jpg" alt="Jessica" class="mentor-thumb">
+                        <div class="mentor-details">
+                            <h3>Jessica Motaung</h3>
+                            <p>Assistant Coach | University of Western Cape</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mentor-item">
+                        <img src="https://via.placeholder.com/50" alt="Klyan" class="mentor-thumb">
+                        <div class="mentor-details">
+                            <h3>Klyan Shane</h3>
+                            <p>Software Developer | Durban</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mentor-item">
+                        <img src="https://via.placeholder.com/50" alt="Aron" class="mentor-thumb">
+                        <div class="mentor-details">
+                            <h3>Aron Smith</h3>
+                            <p>HR Employee | Luno | Cape Town</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mentor-item">
+                        <img src="Asiphe.jpg" alt="Asiphe" class="mentor-thumb">
+                        <div class="mentor-details">
+                            <h3>Asiphe Dosi</h3>
+                            <p>Lecture | University of Kwazulu Natal</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mentor-item">
+                        <img src="https://via.placeholder.com/50" alt="Angelo" class="mentor-thumb">
+                        <div class="mentor-details">
+                            <h3>Angelo Author</h3>
+                            <p>Fashion designer | Port Elizabeth</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <a href="#" class="view-more-link">view more....</a>
+            </aside>
+
+            <!-- Main Profile Panel Area -->
+            <main class="profile-card">
+                
+                <!-- Hero Banner Image Container -->
+                <div class="hero-banner">
+                    <!-- Replace background-image URL in CSS or keep it abstract like the screenshot -->
+                    <div class="profile-avatar-container">
+                        <img src="Mduduzi.jpg" alt="Mduduzi Zwane" class="main-avatar">
+                    </div>
+                </div>
+
+                <!-- Profile Core Info Area -->
+                <div class="profile-body">
+                    <div class="profile-info-section">
+                        <h1 class="profile-name">Mduduzi Zwane</h1>
+                        <p class="profile-title">Manager | First National Bank</p>
+                        
+                        <div class="meta-details">
+                            <p><strong>Email:</strong> zwanemduduzi@gmail.com</p>
+                            <p><strong>Location:</strong> Gqeberha, Eastern Cape</p>
+                        </div>
+                        
+                        <button class="btn-request" id="requestBtn">Request mentor</button>
+                    </div>
+
+                    <!-- Right Column Split: Education & Work Block -->
+                    <div class="education-work-section">
+                        <h2 class="section-title">Education & work</h2>
+                        
+                        <div class="edu-work-item">
+                            <div class="logo-wrapper orange-bg">
+                                <!-- Place University Logo here -->
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <span class="institution-name">University of Johannesburg</span>
+                        </div>
+
+                        <div class="edu-work-item">
+                            <div class="logo-wrapper teal-bg">
+                                <!-- Place FNB/Company Logo here -->
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <span class="institution-name">First National Bank</span>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script href="script.js"></script>
+</body>
+</html>
