@@ -1,0 +1,318 @@
+/* Reset & Global Base Settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #3b5998; /* Outer frame background color from image border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Outer mockup frame style match */
+.page-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #f4f6f9;
+    border: 8px solid #0077cc; /* The deep blue screenshot frame border color */
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Header & Navigation Bar Styling */
+header {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 18px;
+    color: #1a2b49;
+}
+
+.logo-green {
+    color: #43a047;
+}
+
+.main-nav {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 6px 14px;
+    transition: all 0.2s;
+}
+
+.nav-item.active {
+    background-color: #102a43; /* Exact Dark Blue Highlight on 'Home' button */
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-container input {
+    padding: 6px 12px;
+    border: 1px solid #a0aec0;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 160px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #4a5568;
+    position: relative;
+}
+
+.icon-btn {
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 9px;
+    padding: 1px 4px;
+    border-radius: 50%;
+}
+
+.user-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #cbd5e0;
+}
+
+/* Dashboard Split Grid Setup */
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 24px;
+    padding: 24px;
+}
+
+/* Left Sidebar Card Design */
+.sidebar-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-title {
+    font-size: 16px;
+    color: #1a202c;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.mentor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.mentor-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.mentor-thumb {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #cbd5e0;
+}
+
+.mentor-details h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 2px;
+}
+
+.mentor-details p {
+    font-size: 11px;
+    color: #718096;
+    line-height: 1.3;
+}
+
+.view-more-link {
+    font-size: 13px;
+    color: #2b6cb0;
+    text-decoration: none;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+/* Main Profile Panel Component Styling */
+.profile-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+/* Abstract Hero Banner background mimicking your graphic placeholder */
+.hero-banner {
+    height: 180px;
+    background: linear-gradient(135deg, #000000 30%, #2c3e50 60%, #e67e22 100%);
+    position: relative;
+}
+
+.profile-avatar-container {
+    position: absolute;
+    bottom: -50px;
+    left: 30px;
+}
+
+.main-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    object-fit: cover;
+    background-color: #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Profile Inner Layout Split */
+.profile-body {
+    padding: 65px 35px 35px 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.profile-name {
+    font-size: 24px;
+    color: #102a43;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.profile-title {
+    font-size: 16px;
+    color: #4a5568;
+    margin-bottom: 16px;
+}
+
+.meta-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.meta-details p {
+    font-size: 15px;
+    color: #2d3748;
+}
+
+.meta-details strong {
+    color: #1a202c;
+    font-weight: 700;
+}
+
+/* Button UI exactly styled to screenshot green */
+.btn-request {
+    background-color: #55a630; /* Bright Green exact color matches screenshot button */
+    color: #ffffff;
+    border: none;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(85, 166, 48, 0.2);
+    transition: background 0.2s ease;
+}
+
+.btn-request:hover {
+    background-color: #4a9327;
+}
+
+/* Education & Work Column UI Elements */
+.section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 20px;
+}
+
+.edu-work-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.logo-wrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+
+/* Custom UI colors matching the exact circle backgrounds */
+.orange-bg {
+    background-color: #e65100; /* Orange match for University block logo background */
+}
+
+.teal-bg {
+    background-color: #00838f; /* Teal/cyan brand match for FNB logo background */
+}
+
+.institution-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2d3748;
+}
