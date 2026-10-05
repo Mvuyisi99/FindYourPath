@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #EAECF0;
+  min-height: 100vh;
+}
+
+/* TOP NAV */
+.topnav {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #1a1a2e;
+}
+
+.logo-icon img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+  flex: 1;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.nav-links a.active {
+  background: #1a1a2e;
+  color: white;
+}
+
+/* PAGE LAYOUT */
+.page {
+  display: flex;
+  padding: 15px;
+  gap: 15px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 210px;
+}
+
+.sidebar-box {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.sidebar-box a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar-box a.active {
+  background: #eaf4ea;
+  color: #2E7D32;
+}
+
+.sidebar-lower {
+  margin-top: 10px;
+}
+
+.sidebar-lower a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* WALL */
+.wall {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.create-row {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.create-row input {
+  flex: 1;
+  padding: 10px;
+}
+
+.btn-post {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
+
+/* CARDS */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.card {
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+}
+
+/* COLORS */
+.c-navy { background: #1B3A6B; }
+.c-green { background: #2E7D32; }
+.c-yellow { background: #EFE04E; color: #000; }
+.c-orange { background: #D4820D; }
+.c-blue { background: #1155A6; }
+.c-dark { background: #1A1A2E; }
+
+/* MENTORS */
+.mentors-panel {
+  width: 220px;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.m-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
